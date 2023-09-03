@@ -1,0 +1,364 @@
+CRITICAL - 2022-11-21 21:45:43 --> Undefined variable: title
+in APPPATH\Views\user\hasil-diagnosa.php on line 9.
+ 1 APPPATH\Views\user\hasil-diagnosa.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'APPPATH\\Views\\user\\hasil-diagnosa.php', 9, [])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\hasil-diagnosa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('user/hasil-diagnosa', [], true)
+ 5 APPPATH\Controllers\PdfController.php(59): view('user/hasil-diagnosa')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 22:17:08 --> Undefined offset: 77
+in VENDORPATH\tecnickcom\tcpdf\tcpdf.php on line 18807.
+ 1 VENDORPATH\tecnickcom\tcpdf\tcpdf.php(18807): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 77', 'VENDORPATH\\tecnickcom\\tcpdf\\tcpdf.php', 18807, [...])
+ 2 VENDORPATH\tecnickcom\tcpdf\tcpdf.php(5917): TCPDF->writeHTML('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\user\\hasil-diagnosa.php -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <style>
+        p, span, table { font-size: 12px}
+        table { width: 100%; border: 1px solid #dee2e6; }
+        table.tb-item tr th, table.tb-item tr td {
+            border:1px solid #000
+        }
+    </style>
+
+</head>
+<body>
+    <p>Berdasarkan gejala yang anda pilih</p>
+    <table class="tb-item" cellpadding="4">
+        <tr style="background-color: #a9a9a9;">
+            <th width="30%"> Kode Gejala</th>
+            <th width="70%">Nama Gejala</th>
+        </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+    </table>
+    <p>Kamera anda kemungkinan mengalami kerusakan pada: <b style="text-transform:uppercase;">sensor</b></p>
+    <table class="tb-item">
+        <tr style="background-color: #a9a9a9;">
+            <th>Penjelasan</th>
+            <th>Penanganan</th>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eos repudiandae possimus eaque totam dignissimos consequuntur vel, quod fugiat! Dolores sunt dolorum reprehenderit non distinctio natus voluptatum illo, pariatur odit? Asperiores debitis dolores eveniet ratione maiores dignissimos eum tempora architecto modi possimus veniam minima ab officia, corrupti unde alias repellendus?</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, asperiores odio omnis sint laboriosam perspiciatis atque? Ipsam nemo earum dolorem voluptatum enim voluptates at exercitationem laborum eveniet nisi? Eos laboriosam soluta aspernatur necessitatibus, illum sint eligendi est perspiciatis perferendis vitae facilis quaerat praesentium delectus amet, atque tenetur cum aperiam nesciunt tempora commodi ea ipsum? Enim sed sint minima rerum fugit non, dolor deserunt modi obcaecati iste quaerat perspiciatis aliquid tenetur quas minus alias quo aut fugiat ullam ad repudiandae. Vitae doloribus assumenda inventore deleniti voluptatibus rerum asperiores suscipit dignissimos necessitatibus dolore, ullam ducimus officiis sed nisi culpa veniam magni magnam!</th>
+        </tr>
+    </table>
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\user\\hasil-diagnosa.php -->
+', true, false, true, true, 'C:\\xampp\\htdocs\\sp-kamera')
+ 3 VENDORPATH\tecnickcom\tcpdf\tcpdf.php(17249): TCPDF->MultiCell(180.0001444444444, 0, '<!-- DEBUG-VIEW START 1 APPPATH\\Views\\user\\hasil-diagnosa.php -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <style>
+        p, span, table { font-size: 12px}
+        table { width: 100%; border: 1px solid #dee2e6; }
+        table.tb-item tr th, table.tb-item tr td {
+            border:1px solid #000
+        }
+    </style>
+
+</head>
+<body>
+    <p>Berdasarkan gejala yang anda pilih</p>
+    <table class="tb-item" cellpadding="4">
+        <tr style="background-color: #a9a9a9;">
+            <th width="30%"> Kode Gejala</th>
+            <th width="70%">Nama Gejala</th>
+        </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+    </table>
+    <p>Kamera anda kemungkinan mengalami kerusakan pada: <b style="text-transform:uppercase;">sensor</b></p>
+    <table class="tb-item">
+        <tr style="background-color: #a9a9a9;">
+            <th>Penjelasan</th>
+            <th>Penanganan</th>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eos repudiandae possimus eaque totam dignissimos consequuntur vel, quod fugiat! Dolores sunt dolorum reprehenderit non distinctio natus voluptatum illo, pariatur odit? Asperiores debitis dolores eveniet ratione maiores dignissimos eum tempora architecto modi possimus veniam minima ab officia, corrupti unde alias repellendus?</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, asperiores odio omnis sint laboriosam perspiciatis atque? Ipsam nemo earum dolorem voluptatum enim voluptates at exercitationem laborum eveniet nisi? Eos laboriosam soluta aspernatur necessitatibus, illum sint eligendi est perspiciatis perferendis vitae facilis quaerat praesentium delectus amet, atque tenetur cum aperiam nesciunt tempora commodi ea ipsum? Enim sed sint minima rerum fugit non, dolor deserunt modi obcaecati iste quaerat perspiciatis aliquid tenetur quas minus alias quo aut fugiat ullam ad repudiandae. Vitae doloribus assumenda inventore deleniti voluptatibus rerum asperiores suscipit dignissimos necessitatibus dolore, ullam ducimus officiis sed nisi culpa veniam magni magnam!</th>
+        </tr>
+    </table>
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\user\\hasil-diagnosa.php -->
+', 0, 'C:\\xampp\\htdocs\\sp-kamera', 0, 1, 15.0, 27.0, true, 0, true, true, 0, 'T', false)
+ 4 APPPATH\Controllers\PdfController.php(65): TCPDF->writeHTMLCell(0, 0, 'C:\\xampp\\htdocs\\sp-kamera', 'C:\\xampp\\htdocs\\sp-kamera', '<!-- DEBUG-VIEW START 1 APPPATH\\Views\\user\\hasil-diagnosa.php -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <style>
+        p, span, table { font-size: 12px}
+        table { width: 100%; border: 1px solid #dee2e6; }
+        table.tb-item tr th, table.tb-item tr td {
+            border:1px solid #000
+        }
+    </style>
+
+</head>
+<body>
+    <p>Berdasarkan gejala yang anda pilih</p>
+    <table class="tb-item" cellpadding="4">
+        <tr style="background-color: #a9a9a9;">
+            <th width="30%"> Kode Gejala</th>
+            <th width="70%">Nama Gejala</th>
+        </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+    </table>
+    <p>Kamera anda kemungkinan mengalami kerusakan pada: <b style="text-transform:uppercase;">sensor</b></p>
+    <table class="tb-item">
+        <tr style="background-color: #a9a9a9;">
+            <th>Penjelasan</th>
+            <th>Penanganan</th>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eos repudiandae possimus eaque totam dignissimos consequuntur vel, quod fugiat! Dolores sunt dolorum reprehenderit non distinctio natus voluptatum illo, pariatur odit? Asperiores debitis dolores eveniet ratione maiores dignissimos eum tempora architecto modi possimus veniam minima ab officia, corrupti unde alias repellendus?</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, asperiores odio omnis sint laboriosam perspiciatis atque? Ipsam nemo earum dolorem voluptatum enim voluptates at exercitationem laborum eveniet nisi? Eos laboriosam soluta aspernatur necessitatibus, illum sint eligendi est perspiciatis perferendis vitae facilis quaerat praesentium delectus amet, atque tenetur cum aperiam nesciunt tempora commodi ea ipsum? Enim sed sint minima rerum fugit non, dolor deserunt modi obcaecati iste quaerat perspiciatis aliquid tenetur quas minus alias quo aut fugiat ullam ad repudiandae. Vitae doloribus assumenda inventore deleniti voluptatibus rerum asperiores suscipit dignissimos necessitatibus dolore, ullam ducimus officiis sed nisi culpa veniam magni magnam!</th>
+        </tr>
+    </table>
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\user\\hasil-diagnosa.php -->
+', 0, 1, 0, true, 'C:\\xampp\\htdocs\\sp-kamera', true)
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 22:17:39 --> Undefined offset: 77
+in VENDORPATH\tecnickcom\tcpdf\tcpdf.php on line 18807.
+ 1 VENDORPATH\tecnickcom\tcpdf\tcpdf.php(18807): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined offset: 77', 'VENDORPATH\\tecnickcom\\tcpdf\\tcpdf.php', 18807, [...])
+ 2 VENDORPATH\tecnickcom\tcpdf\tcpdf.php(5917): TCPDF->writeHTML('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\user\\hasil-diagnosa.php -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <style>
+        p, span, table { font-size: 12px}
+        table { width: 100%; border: 1px solid #dee2e6; }
+        table.tb-item tr th, table.tb-item tr td {
+            border:1px solid #000
+        }
+    </style>
+
+</head>
+<body>
+    <p>Berdasarkan gejala yang anda pilih</p>
+    <table class="tb-item" cellpadding="4">
+        <tr style="background-color: #a9a9a9;">
+            <th width="30%"> Kode Gejala</th>
+            <th width="70%">Nama Gejala</th>
+        </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+    </table>
+    <p>Kamera anda kemungkinan mengalami kerusakan pada: <b style="text-transform:uppercase;">sensor</b></p>
+    <table class="tb-item">
+        <tr style="background-color: #a9a9a9;">
+            <th>Penjelasan</th>
+            <th>Penanganan</th>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eos repudiandae possimus eaque totam dignissimos consequuntur vel, quod fugiat! Dolores sunt dolorum reprehenderit non distinctio natus voluptatum illo, pariatur odit? Asperiores debitis dolores eveniet ratione maiores dignissimos eum tempora architecto modi possimus veniam minima ab officia, corrupti unde alias repellendus?</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, asperiores odio omnis sint laboriosam perspiciatis atque? Ipsam nemo earum dolorem voluptatum enim voluptates at exercitationem laborum eveniet nisi? Eos laboriosam soluta aspernatur necessitatibus, illum sint eligendi est perspiciatis perferendis vitae facilis quaerat praesentium delectus amet, atque tenetur cum aperiam nesciunt tempora commodi ea ipsum? Enim sed sint minima rerum fugit non, dolor deserunt modi obcaecati iste quaerat perspiciatis aliquid tenetur quas minus alias quo aut fugiat ullam ad repudiandae. Vitae doloribus assumenda inventore deleniti voluptatibus rerum asperiores suscipit dignissimos necessitatibus dolore, ullam ducimus officiis sed nisi culpa veniam magni magnam!</th>
+        </tr>
+    </table>
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\user\\hasil-diagnosa.php -->
+', true, false, true, true, 'C:\\xampp\\htdocs\\sp-kamera')
+ 3 VENDORPATH\tecnickcom\tcpdf\tcpdf.php(17249): TCPDF->MultiCell(180.0001444444444, 0, '<!-- DEBUG-VIEW START 1 APPPATH\\Views\\user\\hasil-diagnosa.php -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <style>
+        p, span, table { font-size: 12px}
+        table { width: 100%; border: 1px solid #dee2e6; }
+        table.tb-item tr th, table.tb-item tr td {
+            border:1px solid #000
+        }
+    </style>
+
+</head>
+<body>
+    <p>Berdasarkan gejala yang anda pilih</p>
+    <table class="tb-item" cellpadding="4">
+        <tr style="background-color: #a9a9a9;">
+            <th width="30%"> Kode Gejala</th>
+            <th width="70%">Nama Gejala</th>
+        </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+    </table>
+    <p>Kamera anda kemungkinan mengalami kerusakan pada: <b style="text-transform:uppercase;">sensor</b></p>
+    <table class="tb-item">
+        <tr style="background-color: #a9a9a9;">
+            <th>Penjelasan</th>
+            <th>Penanganan</th>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eos repudiandae possimus eaque totam dignissimos consequuntur vel, quod fugiat! Dolores sunt dolorum reprehenderit non distinctio natus voluptatum illo, pariatur odit? Asperiores debitis dolores eveniet ratione maiores dignissimos eum tempora architecto modi possimus veniam minima ab officia, corrupti unde alias repellendus?</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, asperiores odio omnis sint laboriosam perspiciatis atque? Ipsam nemo earum dolorem voluptatum enim voluptates at exercitationem laborum eveniet nisi? Eos laboriosam soluta aspernatur necessitatibus, illum sint eligendi est perspiciatis perferendis vitae facilis quaerat praesentium delectus amet, atque tenetur cum aperiam nesciunt tempora commodi ea ipsum? Enim sed sint minima rerum fugit non, dolor deserunt modi obcaecati iste quaerat perspiciatis aliquid tenetur quas minus alias quo aut fugiat ullam ad repudiandae. Vitae doloribus assumenda inventore deleniti voluptatibus rerum asperiores suscipit dignissimos necessitatibus dolore, ullam ducimus officiis sed nisi culpa veniam magni magnam!</th>
+        </tr>
+    </table>
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\user\\hasil-diagnosa.php -->
+', 0, 'C:\\xampp\\htdocs\\sp-kamera', 0, 1, 15.0, 27.0, true, 0, true, true, 0, 'T', false)
+ 4 APPPATH\Controllers\PdfController.php(65): TCPDF->writeHTMLCell(0, 0, 'C:\\xampp\\htdocs\\sp-kamera', 'C:\\xampp\\htdocs\\sp-kamera', '<!-- DEBUG-VIEW START 1 APPPATH\\Views\\user\\hasil-diagnosa.php -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <style>
+        p, span, table { font-size: 12px}
+        table { width: 100%; border: 1px solid #dee2e6; }
+        table.tb-item tr th, table.tb-item tr td {
+            border:1px solid #000
+        }
+    </style>
+
+</head>
+<body>
+    <p>Berdasarkan gejala yang anda pilih</p>
+    <table class="tb-item" cellpadding="4">
+        <tr style="background-color: #a9a9a9;">
+            <th width="30%"> Kode Gejala</th>
+            <th width="70%">Nama Gejala</th>
+        </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+            <tr>
+                <td>G1</td>
+                <td>Lorem, ipsum dolor sit amet consectetur adipisicing.</th>
+            </tr>
+    </table>
+    <p>Kamera anda kemungkinan mengalami kerusakan pada: <b style="text-transform:uppercase;">sensor</b></p>
+    <table class="tb-item">
+        <tr style="background-color: #a9a9a9;">
+            <th>Penjelasan</th>
+            <th>Penanganan</th>
+        </tr>
+        <tr>
+            <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate eos repudiandae possimus eaque totam dignissimos consequuntur vel, quod fugiat! Dolores sunt dolorum reprehenderit non distinctio natus voluptatum illo, pariatur odit? Asperiores debitis dolores eveniet ratione maiores dignissimos eum tempora architecto modi possimus veniam minima ab officia, corrupti unde alias repellendus?</td>
+            <td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt, asperiores odio omnis sint laboriosam perspiciatis atque? Ipsam nemo earum dolorem voluptatum enim voluptates at exercitationem laborum eveniet nisi? Eos laboriosam soluta aspernatur necessitatibus, illum sint eligendi est perspiciatis perferendis vitae facilis quaerat praesentium delectus amet, atque tenetur cum aperiam nesciunt tempora commodi ea ipsum? Enim sed sint minima rerum fugit non, dolor deserunt modi obcaecati iste quaerat perspiciatis aliquid tenetur quas minus alias quo aut fugiat ullam ad repudiandae. Vitae doloribus assumenda inventore deleniti voluptatibus rerum asperiores suscipit dignissimos necessitatibus dolore, ullam ducimus officiis sed nisi culpa veniam magni magnam!</th>
+        </tr>
+    </table>
+</body>
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\user\\hasil-diagnosa.php -->
+', 0, 1, 0, true, 'C:\\xampp\\htdocs\\sp-kamera', true)
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak()
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 22:49:28 --> Too few arguments to function App\Controllers\PdfController::cetak(), 0 passed in C:\xampp\htdocs\source-sp-kamera\system\CodeIgniter.php on line 927 and exactly 1 expected
+in APPPATH\Controllers\PdfController.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak()
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 22:50:54 --> Array to string conversion
+in APPPATH\Views\user\hasil-diagnosa.php on line 66.
+ 1 APPPATH\Views\user\hasil-diagnosa.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string conversion', 'APPPATH\\Views\\user\\hasil-diagnosa.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\hasil-diagnosa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('user/hasil-diagnosa', [], true)
+ 5 APPPATH\Controllers\PdfController.php(82): view('user/hasil-diagnosa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 22:52:24 --> Undefined variable: golkerusakan
+in APPPATH\Views\user\hasil-diagnosa.php on line 66.
+ 1 APPPATH\Views\user\hasil-diagnosa.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: golkerusakan', 'APPPATH\\Views\\user\\hasil-diagnosa.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\hasil-diagnosa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('user/hasil-diagnosa', [], true)
+ 5 APPPATH\Controllers\PdfController.php(82): view('user/hasil-diagnosa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-21 22:58:50 --> Undefined index: nama_gejala
+in APPPATH\Views\user\hasil-diagnosa.php on line 60.
+ 1 APPPATH\Views\user\hasil-diagnosa.php(60): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: nama_gejala', 'APPPATH\\Views\\user\\hasil-diagnosa.php', 60, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\user\\hasil-diagnosa.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('user/hasil-diagnosa', [], true)
+ 5 APPPATH\Controllers\PdfController.php(82): view('user/hasil-diagnosa', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

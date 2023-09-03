@@ -1,0 +1,163 @@
+ERROR - 2023-08-26 02:13:28 --> mysqli_sql_exception: Unknown column 'foto' in 'field list' in C:\xampp\htdocs\ppdb\aplikasi\system\Database\MySQLi\Connection.php:292
+Stack trace:
+#0 C:\xampp\htdocs\ppdb\aplikasi\system\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb...', 0)
+#1 C:\xampp\htdocs\ppdb\aplikasi\system\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb...')
+#2 C:\xampp\htdocs\ppdb\aplikasi\system\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb...')
+#3 C:\xampp\htdocs\ppdb\aplikasi\system\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb...', Array, false)
+#4 C:\xampp\htdocs\ppdb\aplikasi\system\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 C:\xampp\htdocs\ppdb\aplikasi\system\BaseModel.php(749): CodeIgniter\Model->doInsert(Array)
+#6 C:\xampp\htdocs\ppdb\aplikasi\system\Model.php(667): CodeIgniter\BaseModel->insert(Array, false)
+#7 C:\xampp\htdocs\ppdb\aplikasi\system\BaseModel.php(659): CodeIgniter\Model->insert(Array, false)
+#8 C:\xampp\htdocs\ppdb\aplikasi\app\Controllers\Dashboard.php(124): CodeIgniter\BaseModel->save(Array)
+#9 C:\xampp\htdocs\ppdb\aplikasi\system\CodeIgniter.php(927): App\Controllers\Dashboard->pendaftaran()
+#10 C:\xampp\htdocs\ppdb\aplikasi\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#11 C:\xampp\htdocs\ppdb\aplikasi\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#12 C:\xampp\htdocs\ppdb\index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2023-08-26 02:13:28 --> Unknown column 'foto' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 292.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(292): mysqli->query('INSERT INTO `tb_peserta` (`nisn`, `nama_lengkap`, `jenis_kelamin`, `no_hp`, `alamat`, `tempat_lahir`, `tanggal_lahir`, `berat_badan`, `tinggi_badan`, `desa`, `asal_sekolah`, `pilihan_pertama`, `pilihan_kedua`, `foto`, `ktp_ibu`, `ktp_bpk`, `kk`, `akta_kelahiran`, `ijazah`, `raport`, `status`, `created_at`, `updated_at`) VALUES (\'123456\', \'tes\', \'l\', \'088210830521\', \'tes\', \'Pandeglang\', \'2016-01-01\', \'12\', \'121\', \'tes\', \'tes\', \'Teknik Otomotif\', \'Teknik Geologi Pertambangan\', \'1693034007_82cd75f79d972197a569.jpg\', \'1693034007_2e0683e7377f1829ff57.pdf\', \'1693034007_bb040b2a6cea6f3e01f0.pdf\', \'1693034007_b9a49e03c3b09572ed24.pdf\', \'1693034007_4ba984c675e81699ee91.pdf\', \'1693034007_3326c2baae988539bb3f.pdf\', \'1693034007_c04474673484e15199da.pdf\', 1, \'2023-08-26 02:13:27\', \'2023-08-26 02:13:27\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `tb_peserta` (`nisn`, `nama_lengkap`, `jenis_kelamin`, `no_hp`, `alamat`, `tempat_lahir`, `tanggal_lahir`, `berat_badan`, `tinggi_badan`, `desa`, `asal_sekolah`, `pilihan_pertama`, `pilihan_kedua`, `foto`, `ktp_ibu`, `ktp_bpk`, `kk`, `akta_kelahiran`, `ijazah`, `raport`, `status`, `created_at`, `updated_at`) VALUES (\'123456\', \'tes\', \'l\', \'088210830521\', \'tes\', \'Pandeglang\', \'2016-01-01\', \'12\', \'121\', \'tes\', \'tes\', \'Teknik Otomotif\', \'Teknik Geologi Pertambangan\', \'1693034007_82cd75f79d972197a569.jpg\', \'1693034007_2e0683e7377f1829ff57.pdf\', \'1693034007_bb040b2a6cea6f3e01f0.pdf\', \'1693034007_b9a49e03c3b09572ed24.pdf\', \'1693034007_4ba984c675e81699ee91.pdf\', \'1693034007_3326c2baae988539bb3f.pdf\', \'1693034007_c04474673484e15199da.pdf\', 1, \'2023-08-26 02:13:27\', \'2023-08-26 02:13:27\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `tb_peserta` (`nisn`, `nama_lengkap`, `jenis_kelamin`, `no_hp`, `alamat`, `tempat_lahir`, `tanggal_lahir`, `berat_badan`, `tinggi_badan`, `desa`, `asal_sekolah`, `pilihan_pertama`, `pilihan_kedua`, `foto`, `ktp_ibu`, `ktp_bpk`, `kk`, `akta_kelahiran`, `ijazah`, `raport`, `status`, `created_at`, `updated_at`) VALUES (\'123456\', \'tes\', \'l\', \'088210830521\', \'tes\', \'Pandeglang\', \'2016-01-01\', \'12\', \'121\', \'tes\', \'tes\', \'Teknik Otomotif\', \'Teknik Geologi Pertambangan\', \'1693034007_82cd75f79d972197a569.jpg\', \'1693034007_2e0683e7377f1829ff57.pdf\', \'1693034007_bb040b2a6cea6f3e01f0.pdf\', \'1693034007_b9a49e03c3b09572ed24.pdf\', \'1693034007_4ba984c675e81699ee91.pdf\', \'1693034007_3326c2baae988539bb3f.pdf\', \'1693034007_c04474673484e15199da.pdf\', 1, \'2023-08-26 02:13:27\', \'2023-08-26 02:13:27\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query('INSERT INTO `tb_peserta` (`nisn`, `nama_lengkap`, `jenis_kelamin`, `no_hp`, `alamat`, `tempat_lahir`, `tanggal_lahir`, `berat_badan`, `tinggi_badan`, `desa`, `asal_sekolah`, `pilihan_pertama`, `pilihan_kedua`, `foto`, `ktp_ibu`, `ktp_bpk`, `kk`, `akta_kelahiran`, `ijazah`, `raport`, `status`, `created_at`, `updated_at`) VALUES (:nisn:, :nama_lengkap:, :jenis_kelamin:, :no_hp:, :alamat:, :tempat_lahir:, :tanggal_lahir:, :berat_badan:, :tinggi_badan:, :desa:, :asal_sekolah:, :pilihan_pertama:, :pilihan_kedua:, :foto:, :ktp_ibu:, :ktp_bpk:, :kk:, :akta_kelahiran:, :ijazah:, :raport:, :status:, :created_at:, :updated_at:)', [...], false)
+ 5 SYSTEMPATH\Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH\BaseModel.php(749): CodeIgniter\Model->doInsert([...])
+ 7 SYSTEMPATH\Model.php(667): CodeIgniter\BaseModel->insert([...], false)
+ 8 SYSTEMPATH\BaseModel.php(659): CodeIgniter\Model->insert([...], false)
+ 9 APPPATH\Controllers\Dashboard.php(124): CodeIgniter\BaseModel->save([...])
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Dashboard->pendaftaran()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 22:16:09 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW), expecting ')'
+in APPPATH\Config\Routes.php on line 45.
+ 1 SYSTEMPATH\CodeIgniter.php(430): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 2 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 22:33:02 --> fopen(file:///kartu-peserta/kartu-pendaftaran-1pdf): failed to open stream: No such file or directory
+in FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1842.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file:///kartu-peserta/kartu-pendaftaran-1pdf): failed to open stream: No such file or directory', 'FCPATH\\aplikasi\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1842, [...])
+ 2 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1842): fopen('file:///kartu-peserta/kartu-pendaftaran-1pdf', 'wb')
+ 3 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(7754): TCPDF_STATIC::fopenLocal('file:///kartu-peserta/kartu-pendaftaran-1pdf', 'wb')
+ 4 APPPATH\Controllers\PdfController.php(78): TCPDF->Output('/kartu-peserta/kartu-pendaftaran-1pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 22:33:43 --> fopen(file:///kartu-peserta/kartu-pendaftaran-1.pdf): failed to open stream: No such file or directory
+in FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1842.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file:///kartu-peserta/kartu-pendaftaran-1.pdf): failed to open stream: No such file or directory', 'FCPATH\\aplikasi\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1842, [...])
+ 2 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1842): fopen('file:///kartu-peserta/kartu-pendaftaran-1.pdf', 'wb')
+ 3 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(7754): TCPDF_STATIC::fopenLocal('file:///kartu-peserta/kartu-pendaftaran-1.pdf', 'wb')
+ 4 APPPATH\Controllers\PdfController.php(78): TCPDF->Output('/kartu-peserta/kartu-pendaftaran-1.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 22:42:36 --> fopen(file://C:\xampp\htdocs\ppdb\aplikasi\app\Controllers/kartu-peserta/kartu-pendaftaran-1.pdf): failed to open stream: No such file or directory
+in FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1842.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file://C:\\xampp\\htdocs\\ppdb\\aplikasi\\app\\Controllers/kartu-peserta/kartu-pendaftaran-1.pdf): failed to open stream: No such file or directory', 'FCPATH\\aplikasi\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1842, [...])
+ 2 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1842): fopen('file://C:\\xampp\\htdocs\\ppdb\\aplikasi\\app\\Controllers/kartu-peserta/kartu-pendaftaran-1.pdf', 'wb')
+ 3 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(7754): TCPDF_STATIC::fopenLocal('file://C:\\xampp\\htdocs\\ppdb\\aplikasi\\app\\Controllers/kartu-peserta/kartu-pendaftaran-1.pdf', 'wb')
+ 4 APPPATH\Controllers\PdfController.php(78): TCPDF->Output('APPPATH\\Controllers/kartu-peserta/kartu-pendaftaran-1.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 22:45:12 --> fopen(file://C:/xampp/htdocs///kartu-peserta/kartu-pendaftaran-1.pdf): failed to open stream: No such file or directory
+in FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1842.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file://C:/xampp/htdocs///kartu-peserta/kartu-pendaftaran-1.pdf): failed to open stream: No such file or directory', 'FCPATH\\aplikasi\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1842, [...])
+ 2 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1842): fopen('file://C:/xampp/htdocs///kartu-peserta/kartu-pendaftaran-1.pdf', 'wb')
+ 3 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(7754): TCPDF_STATIC::fopenLocal('file://C:/xampp/htdocs///kartu-peserta/kartu-pendaftaran-1.pdf', 'wb')
+ 4 APPPATH\Controllers\PdfController.php(78): TCPDF->Output('C:/xampp/htdocs///kartu-peserta/kartu-pendaftaran-1.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 22:56:26 --> fopen(file://C:\xampp\htdocs\ppdb\/kartu-peserta/kartu-pendaftaran-1.pdf): failed to open stream: No such file or directory
+in FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1842.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file://C:\\xampp\\htdocs\\ppdb\\/kartu-peserta/kartu-pendaftaran-1.pdf): failed to open stream: No such file or directory', 'FCPATH\\aplikasi\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1842, [...])
+ 2 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1842): fopen('file://C:\\xampp\\htdocs\\ppdb\\/kartu-peserta/kartu-pendaftaran-1.pdf', 'wb')
+ 3 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(7754): TCPDF_STATIC::fopenLocal('file://C:\\xampp\\htdocs\\ppdb\\/kartu-peserta/kartu-pendaftaran-1.pdf', 'wb')
+ 4 APPPATH\Controllers\PdfController.php(79): TCPDF->Output('FCPATH\\/kartu-peserta/kartu-pendaftaran-1.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 22:57:02 --> fopen(file://C:\xampp\htdocs\ppdb\\kartu-peserta\kartu-pendaftaran-1.pdf): failed to open stream: No such file or directory
+in FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1842.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file://C:\\xampp\\htdocs\\ppdb\\\\kartu-peserta\\kartu-pendaftaran-1.pdf): failed to open stream: No such file or directory', 'FCPATH\\aplikasi\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1842, [...])
+ 2 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1842): fopen('file://C:\\xampp\\htdocs\\ppdb\\\\kartu-peserta\\kartu-pendaftaran-1.pdf', 'wb')
+ 3 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(7754): TCPDF_STATIC::fopenLocal('file://C:\\xampp\\htdocs\\ppdb\\\\kartu-peserta\\kartu-pendaftaran-1.pdf', 'wb')
+ 4 APPPATH\Controllers\PdfController.php(79): TCPDF->Output('FCPATH\\\\kartu-peserta\\kartu-pendaftaran-1.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 22:57:23 --> fopen(file://C:\xampp\htdocs\ppdb\kartu-peserta\kartu-pendaftaran-1.pdf): failed to open stream: No such file or directory
+in FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1842.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file://C:\\xampp\\htdocs\\ppdb\\kartu-peserta\\kartu-pendaftaran-1.pdf): failed to open stream: No such file or directory', 'FCPATH\\aplikasi\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1842, [...])
+ 2 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1842): fopen('file://C:\\xampp\\htdocs\\ppdb\\kartu-peserta\\kartu-pendaftaran-1.pdf', 'wb')
+ 3 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(7754): TCPDF_STATIC::fopenLocal('file://C:\\xampp\\htdocs\\ppdb\\kartu-peserta\\kartu-pendaftaran-1.pdf', 'wb')
+ 4 APPPATH\Controllers\PdfController.php(79): TCPDF->Output('FCPATH\\kartu-peserta\\kartu-pendaftaran-1.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 22:57:52 --> fopen(file://C:\xampp\htdocs\ppdb\kartu-peserta\kartu-pendaftaran-1.pdf): failed to open stream: No such file or directory
+in FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1842.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(file://C:\\xampp\\htdocs\\ppdb\\kartu-peserta\\kartu-pendaftaran-1.pdf): failed to open stream: No such file or directory', 'FCPATH\\aplikasi\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1842, [...])
+ 2 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1842): fopen('file://C:\\xampp\\htdocs\\ppdb\\kartu-peserta\\kartu-pendaftaran-1.pdf', 'wb')
+ 3 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(7754): TCPDF_STATIC::fopenLocal('file://C:\\xampp\\htdocs\\ppdb\\kartu-peserta\\kartu-pendaftaran-1.pdf', 'wb')
+ 4 APPPATH\Controllers\PdfController.php(79): TCPDF->Output('FCPATH\\kartu-peserta\\kartu-pendaftaran-1.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 22:58:54 --> Call to undefined method App\Libraries\MY_TCPDF::createPDF()
+in APPPATH\Controllers\PdfController.php on line 79.
+ 1 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 2 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 3 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 23:01:19 --> fopen(): remote host file access not supported, file://kartu-pendaftaran-1.pdf
+in FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1842.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote host file access not supported, file://kartu-pendaftaran-1.pdf', 'FCPATH\\aplikasi\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1842, [...])
+ 2 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1842): fopen('file://kartu-pendaftaran-1.pdf', 'wb')
+ 3 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(7754): TCPDF_STATIC::fopenLocal('file://kartu-pendaftaran-1.pdf', 'wb')
+ 4 APPPATH\Controllers\PdfController.php(79): TCPDF->Output('kartu-pendaftaran-1.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 23:12:13 --> fopen(): remote host file access not supported, file://kartu-pendaftaran-1.pdf
+in FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1842.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote host file access not supported, file://kartu-pendaftaran-1.pdf', 'FCPATH\\aplikasi\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1842, [...])
+ 2 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1842): fopen('file://kartu-pendaftaran-1.pdf', 'wb')
+ 3 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(7754): TCPDF_STATIC::fopenLocal('file://kartu-pendaftaran-1.pdf', 'wb')
+ 4 APPPATH\Controllers\PdfController.php(79): TCPDF->Output('kartu-pendaftaran-1.pdf', 'FI')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 23:13:05 --> fopen(): remote host file access not supported, file://kartu-pendaftaran-1.pdf
+in FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php on line 1842.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(): remote host file access not supported, file://kartu-pendaftaran-1.pdf', 'FCPATH\\aplikasi\\vendor\\tecnickcom\\tcpdf\\include\\tcpdf_static.php', 1842, [...])
+ 2 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\include\tcpdf_static.php(1842): fopen('file://kartu-pendaftaran-1.pdf', 'wb')
+ 3 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(7754): TCPDF_STATIC::fopenLocal('file://kartu-pendaftaran-1.pdf', 'wb')
+ 4 APPPATH\Controllers\PdfController.php(79): TCPDF->Output('kartu-pendaftaran-1.pdf', 'F')
+ 5 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 6 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 7 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-08-26 23:48:53 --> Undefined index: akta
+in APPPATH\Views\admin\seleksi-berkas.php on line 213.
+ 1 APPPATH\Views\admin\seleksi-berkas.php(213): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: akta', 'APPPATH\\Views\\admin\\seleksi-berkas.php', 213, [...])
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\admin\\seleksi-berkas.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('admin/seleksi-berkas', [], true)
+ 5 APPPATH\Controllers\Admin\Peserta.php(48): view('admin/seleksi-berkas', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Admin\Peserta->seleksi()
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\Peserta))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

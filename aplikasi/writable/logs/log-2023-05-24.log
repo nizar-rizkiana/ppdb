@@ -1,0 +1,362 @@
+ERROR - 2023-05-24 02:58:13 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\ppdb\aplikasi\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\xampp\htdocs\ppdb\aplikasi\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'ppdb', 3306, '', 0)
+#1 C:\xampp\htdocs\ppdb\aplikasi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\ppdb\aplikasi\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\ppdb\aplikasi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\ppdb\aplikasi\system\Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\ppdb\aplikasi\system\BaseModel.php(524): CodeIgniter\Model->doFind(true, '1')
+#6 C:\xampp\htdocs\ppdb\aplikasi\app\Controllers\PdfController.php(65): CodeIgniter\BaseModel->find('1')
+#7 C:\xampp\htdocs\ppdb\aplikasi\system\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+#8 C:\xampp\htdocs\ppdb\aplikasi\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#9 C:\xampp\htdocs\ppdb\aplikasi\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 C:\xampp\htdocs\ppdb\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it.
+ in C:\xampp\htdocs\ppdb\aplikasi\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\xampp\htdocs\ppdb\aplikasi\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\ppdb\aplikasi\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\ppdb\aplikasi\system\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp\htdocs\ppdb\aplikasi\system\Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp\htdocs\ppdb\aplikasi\system\BaseModel.php(524): CodeIgniter\Model->doFind(true, '1')
+#5 C:\xampp\htdocs\ppdb\aplikasi\app\Controllers\PdfController.php(65): CodeIgniter\BaseModel->find('1')
+#6 C:\xampp\htdocs\ppdb\aplikasi\system\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+#7 C:\xampp\htdocs\ppdb\aplikasi\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+#8 C:\xampp\htdocs\ppdb\aplikasi\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\ppdb\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-05-24 02:58:13 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it.
+
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tb_peserta`
+WHERE `tb_peserta`.`id_peserta` = :tb_peserta.id_peserta:', [...], false)
+ 3 SYSTEMPATH\Model.php(182): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(524): CodeIgniter\Model->doFind(true, '1')
+ 5 APPPATH\Controllers\PdfController.php(65): CodeIgniter\BaseModel->find('1')
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-05-24 03:13:21 --> Undefined index: thead
+in FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php on line 16642.
+ 1 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(16642): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: thead', 'FCPATH\\aplikasi\\vendor\\tecnickcom\\tcpdf\\tcpdf.php', 16642, [...])
+ 2 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(17354): TCPDF->getHtmlDomArray('<body>&nbsp; <div class="judul">&nbsp; <h3>KARTU PENDAFTARAN</h3><h3>PENERIMAAN PESERTA DIDIK BARU (PPDB)</h3></div> <table><tr><td width="20%">No. Pendaftaran<marker style="font-size:0"/></td><td width="5%">:<marker style="font-size:0"/></td><td width="75%" style="text-transform:capitalize">&nbsp; <p>&nbsp; 1 &nbsp;</p><marker style="font-size:0"/></td></tr><tr><td width="20%">Nama Lengkap<marker style="font-size:0"/></td><td width="5%">:<marker style="font-size:0"/></td><td width="75%" style="text-transform:capitalize">&nbsp; <p>&nbsp; pendaftar1 &nbsp;</p><marker style="font-size:0"/></td></tr><tr><td width="20%">Asal Sekolah<marker style="font-size:0"/></td><td width="5%">:<marker style="font-size:0"/></td><td width="75%" style="text-transform:capitalize">&nbsp; <p>&nbsp; asal sekolah 1 &nbsp;</p><marker style="font-size:0"/></td></tr><tr><td width="20%">Pilihan 1<marker style="font-size:0"/></td><td width="5%">:<marker style="font-size:0"/></td><td width="75%" style="text-transform:capitalize">&nbsp; <p>&nbsp; jurusan1 &nbsp;</p><marker style="font-size:0"/></td></tr><tr><td width="20%">Pilihan 2<marker style="font-size:0"/></td><td width="5%">:<marker style="font-size:0"/></td><td width="75%" style="text-transform:capitalize" p >jurusan1 &nbsp;</p><marker style="font-size:0"/></td></tr></table><br><br>&nbsp; <b>Berkas WAjib</b><br>&nbsp; <span>1.Rapor 2.kTP ayah 3.KTP ibu 4.KK 5.Photo 6.Akte 7.SKL 8.Domisili(Siswa Luar Provinsi banten)</span><br>&nbsp; <table id="ttd"><tr><td width="70%"><marker style="font-size:0"/></td><td style="width: 30%; text-align: center">&nbsp; <p>Pandeglang, 19/05/2023</p><p>Panitia PPDB</p><br><br>&nbsp; <p>(......................)</p><marker style="font-size:0"/></td></tr></table></body>')
+ 3 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(5917): TCPDF->writeHTML('<!-- DEBUG-VIEW START 1 APPPATH\\Views\\user\\kartu-pendaftaran.php -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kertu pendaftaran</title>
+    <style>
+        .judul {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border: none;
+            margin: 12px 0px
+        }
+        table tr td{
+            text-transform: capitalize;
+            padding: 12px;
+        }
+        table tr{
+            padding : 12px;
+        }
+        p{
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="judul">
+        <h3>KARTU PENDAFTARAN</h3>
+        <h3>PENERIMAAN PESERTA DIDIK BARU (PPDB)</h3>
+    </div>
+    <table>
+        <tr>
+            <td width="20%">No. Pendaftaran</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize">
+            <p>
+                1            </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">Nama Lengkap</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize">
+            <p>
+                pendaftar1            </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">Asal Sekolah</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize">
+            <p>
+                asal sekolah 1            </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">Pilihan 1</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize">
+            <p>
+                jurusan1            </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">Pilihan 2</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize"
+            <p>
+                >jurusan1            </p>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <b>Berkas WAjib</b><br>
+    <span>1.Rapor 2.kTP ayah 3.KTP ibu 4.KK 5.Photo 6.Akte 7.SKL 8.Domisili(Siswa Luar Provinsi banten)</span>
+    <br>
+    <table id="ttd">
+        <tr>
+            <td width="70%">
+
+            </td>
+            <td style="width: 30%; text-align: center">
+                <p>Pandeglang, 19/05/2023</p>
+                <p>Panitia PPDB</p>
+                <br>
+                <br>
+                <p>(......................)</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\user\\kartu-pendaftaran.php -->
+', true, false, true, true, 'C:\\xampp\\htdocs\\ppdb')
+ 4 FCPATH\aplikasi\vendor\tecnickcom\tcpdf\tcpdf.php(17249): TCPDF->MultiCell(180.0001444444444, 0, '<!-- DEBUG-VIEW START 1 APPPATH\\Views\\user\\kartu-pendaftaran.php -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kertu pendaftaran</title>
+    <style>
+        .judul {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border: none;
+            margin: 12px 0px
+        }
+        table tr td{
+            text-transform: capitalize;
+            padding: 12px;
+        }
+        table tr{
+            padding : 12px;
+        }
+        p{
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="judul">
+        <h3>KARTU PENDAFTARAN</h3>
+        <h3>PENERIMAAN PESERTA DIDIK BARU (PPDB)</h3>
+    </div>
+    <table>
+        <tr>
+            <td width="20%">No. Pendaftaran</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize">
+            <p>
+                1            </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">Nama Lengkap</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize">
+            <p>
+                pendaftar1            </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">Asal Sekolah</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize">
+            <p>
+                asal sekolah 1            </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">Pilihan 1</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize">
+            <p>
+                jurusan1            </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">Pilihan 2</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize"
+            <p>
+                >jurusan1            </p>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <b>Berkas WAjib</b><br>
+    <span>1.Rapor 2.kTP ayah 3.KTP ibu 4.KK 5.Photo 6.Akte 7.SKL 8.Domisili(Siswa Luar Provinsi banten)</span>
+    <br>
+    <table id="ttd">
+        <tr>
+            <td width="70%">
+
+            </td>
+            <td style="width: 30%; text-align: center">
+                <p>Pandeglang, 19/05/2023</p>
+                <p>Panitia PPDB</p>
+                <br>
+                <br>
+                <p>(......................)</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\user\\kartu-pendaftaran.php -->
+', 0, 'C:\\xampp\\htdocs\\ppdb', 0, 1, 15.0, 27.0, true, 0, true, true, 0, 'T', false)
+ 5 APPPATH\Controllers\PdfController.php(72): TCPDF->writeHTMLCell(0, 0, 'C:\\xampp\\htdocs\\ppdb', 'C:\\xampp\\htdocs\\ppdb', '<!-- DEBUG-VIEW START 1 APPPATH\\Views\\user\\kartu-pendaftaran.php -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kertu pendaftaran</title>
+    <style>
+        .judul {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            border: none;
+            margin: 12px 0px
+        }
+        table tr td{
+            text-transform: capitalize;
+            padding: 12px;
+        }
+        table tr{
+            padding : 12px;
+        }
+        p{
+            text-transform: capitalize;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="judul">
+        <h3>KARTU PENDAFTARAN</h3>
+        <h3>PENERIMAAN PESERTA DIDIK BARU (PPDB)</h3>
+    </div>
+    <table>
+        <tr>
+            <td width="20%">No. Pendaftaran</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize">
+            <p>
+                1            </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">Nama Lengkap</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize">
+            <p>
+                pendaftar1            </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">Asal Sekolah</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize">
+            <p>
+                asal sekolah 1            </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">Pilihan 1</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize">
+            <p>
+                jurusan1            </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="20%">Pilihan 2</td>
+            <td width="5%">:</td>
+            <td width="75%" style="text-transform:capitalize"
+            <p>
+                >jurusan1            </p>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <br>
+    <b>Berkas WAjib</b><br>
+    <span>1.Rapor 2.kTP ayah 3.KTP ibu 4.KK 5.Photo 6.Akte 7.SKL 8.Domisili(Siswa Luar Provinsi banten)</span>
+    <br>
+    <table id="ttd">
+        <tr>
+            <td width="70%">
+
+            </td>
+            <td style="width: 30%; text-align: center">
+                <p>Pandeglang, 19/05/2023</p>
+                <p>Panitia PPDB</p>
+                <br>
+                <br>
+                <p>(......................)</p>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
+<!-- DEBUG-VIEW ENDED 1 APPPATH\\Views\\user\\kartu-pendaftaran.php -->
+', 0, 1, 0, true, 'C:\\xampp\\htdocs\\ppdb', true)
+ 6 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\PdfController->cetak('1')
+ 7 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PdfController))
+ 8 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

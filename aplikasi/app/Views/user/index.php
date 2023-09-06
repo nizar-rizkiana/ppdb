@@ -176,7 +176,8 @@
                   </div>
                   <div class="mb-3">
                     <label for="no_hp" class="form-label">No HP/WhatsApp</label>
-                    <input type="text" name="no_hp" id="no_hp" class="form-control <?= (!empty($validation->hasError('no_hp'))) ? 'is-invalid' : '' ?>" placeholder="08123123123" required value="<?= old('no_hp') ?>">
+                    <input type="text" name="no_hp" id="no_hp" class="form-control <?= (!empty($validation->hasError('no_hp'))) ? 'is-invalid' : '' ?>" placeholder="628xxxxx" required value="<?= old('no_hp') ?>">
+                    <div id="emailHelp" class="form-text">Nomor harus di awali dengan 62</div>
                     <div class="invalid-feedback fw-bold">
                         <?= $validation->getError('no_hp') ?>
                     </div>
@@ -322,6 +323,12 @@
           </div>
         </div>
       </div>
+
+      <br>
+      <br>
+      <a href="https://wa.me/6288223903009?text=*SMKN4#" class="btn-utama">
+        <img src="<?= base_url() ?>/assets/img/WEBSITE/CHT INTERAKTIF.png" alt="" class="img-btn me-0 me-md-4 mb-4 mb-md-0">
+		  </a>
     </div>
 
   </div>

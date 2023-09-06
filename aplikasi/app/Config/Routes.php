@@ -47,6 +47,8 @@ $routes->post('/peserta/editBerkas/(:num)', 'Admin\Peserta::editBerkas/$1', ['fi
 $routes->get('/seleksi-berkas', 'Admin\Peserta::seleksi', ['filter' => 'adminFilter']);
 $routes->get('/peserta', 'Admin\Peserta::index', ['filter' => 'adminFilter']);
 $routes->get('/tambah-admin', 'Admin\Auth::tambahadmin', ['filter' => 'adminFilter']);
+$routes->get('/pengumuman', 'Admin\Pengumuman::index', ['filter' => 'adminFilter']);
+$routes->post('/kirim-pengumuman', 'Admin\Pengumuman::pengumuman', ['filter' => 'adminFilter']);
 
 $routes->get('/auth', 'Admin\Auth::index');
 $routes->get('/auth/logout', 'Admin\Auth::logout');
@@ -54,6 +56,7 @@ $routes->get('/auth/logout', 'Admin\Auth::logout');
 // routes untuk user
 $routes->get('/', 'Dashboard::index');
 $routes->get('kartu-pendaftaran/(:num)', 'PdfController::cetak/$1');
+$routes->get('keterangan-lulus/(:num)', 'PdfController::cetakKelulusan/$1');
 $routes->get('/kirim', 'Dashboard::kirim');
 
 /*

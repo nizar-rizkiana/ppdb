@@ -357,17 +357,21 @@
               {
                 var status = 'Proses';
                 var warna = 'bg-primary';
+                var btnLulus = '';
               }else if(peserta.status == 2)
               {
                 var status = 'Seleksi';
                 var warna = 'bg-info';
+                var btnLulus = '';
               }else if(peserta.status == 3)
               {
                 var status = 'Diterima';
                 var warna = 'bg-success';
+                var btnLulus = '&nbsp;&nbsp; <a href="<?= base_url() ?>/keterangan-lulus/'+peserta.id_peserta+'" target="_blank" class="btn btn-sm btn-success">Cetak Kartu Kelulusan</a>';
               }else{
                 var status = 'Ditolak';
                 var warna = 'bg-danger';
+                var btnLulus = '';
               }
               var tanggal = new Date(peserta.created_at);
               var format = tanggal.toLocaleDateString();
@@ -413,7 +417,7 @@
                             <td>`+peserta.diterima+`</td>
                           </tr>
                           <tr>
-                            <td colspan="3">Status Pendaftaran Anda : <span class="badge `+warna+`">`+status+`</span> &nbsp;&nbsp; <a href="<?= base_url() ?>/kartu-pendaftaran/`+peserta.id_peserta+`" target="_blank" class="btn btn-sm btn-primary">Cetak Kartu</a></td>
+                            <td colspan="3">Status Pendaftaran Anda : <span class="badge `+warna+`">`+status+`</span> &nbsp;&nbsp; <a href="<?= base_url() ?>/kartu-pendaftaran/`+peserta.id_peserta+`" target="_blank" class="btn btn-sm btn-primary">Cetak Kartu</a>`+btnLulus+`</td>
                           </tr>
                         </table>`;
               $('#hasil').html(html);

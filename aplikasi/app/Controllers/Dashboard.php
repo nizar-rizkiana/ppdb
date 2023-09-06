@@ -41,7 +41,7 @@ class Dashboard extends BaseController
         'countryCode' => '62', //optional
         ),
         CURLOPT_HTTPHEADER => array(
-            'Authorization: G4+q2XiN6MZXI6@vfHe!' //change TOKEN to your actual token
+            'Authorization: +gCiqiemdr4igURy#qzL' //change TOKEN to your actual token
         ),
         ));
 

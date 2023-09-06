@@ -64,6 +64,10 @@
                     <svg class="nav-icon">
                         <use xlink:href="<?= base_url() ?>/vendors/@coreui/icons/svg/free.svg#cil-user-plus"></use>
                     </svg>Tambah admin</a></li>
+            <li class="nav-item"><a class="nav-link" href="<?= base_url() ?>/pengumuman">
+                    <svg class="nav-icon">
+                        <use xlink:href="<?= base_url() ?>/vendors/@coreui/icons/svg/free.svg#cil-audio"></use>
+                    </svg>Pengumuman</a></li>
             
         </ul>
         <button class="sidebar-toggler" type="button" data-coreui-toggle="unfoldable"></button>

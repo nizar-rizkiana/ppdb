@@ -121,7 +121,7 @@
                             <use xlink:href="<?= base_url() ?>/vendors/@coreui/icons/svg/free.svg#cil-magnifying-glass"></use>
                         </svg>
                         </button>
-                        <a href="<?= base_url() ?>/kartu-pendaftaran/<?= $p['id_peserta'] ?>" class="btn btn-success" target="_blank">
+                        <a href="<?= base_url() ?>/keterangan-lulus/<?= $p['id_peserta'] ?>" class="btn btn-success" target="_blank">
                         <svg class="icon">
                             <use xlink:href="<?= base_url() ?>/vendors/@coreui/icons/svg/free.svg#cil-print"></use>
                         </svg>

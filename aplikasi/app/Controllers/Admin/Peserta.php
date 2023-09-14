@@ -62,6 +62,7 @@ class Peserta extends BaseController
     
     public function terima($id)
     {
+        $nomor = $this->request->getVar('no_hp');
         $status = $this->request->getVar('status');
         $diterima = $this->request->getVar('diterima');
 
@@ -70,6 +71,12 @@ class Peserta extends BaseController
             'diterima' => $diterima,
         ]);
 
+        $pesan      =  "*PPDB SMKN 4 PANDEGLANG*, \n\n";
+        $pesan      .= "Hai *".$this->request->getVar('nama_lengkap')."* \n\n";
+        $pesan      .= "Selamat Data kamu telah diterima di jurusan ".$diterima."\n\n";
+        $pesan      .= "ketik **SMKN4#* untuk kembali ke menu utama \n\n";
+        $pesan      .= "Terimakasih";
+        $this->whatsapp($nomor,$pesan);
         session()->setFlashdata('berhasil', 'Data berhasil diperbarui');
         return redirect()->to('/seleksi-berkas');
     }
@@ -116,5 +123,34 @@ class Peserta extends BaseController
 
         session()->setFlashdata('berhasil', 'Data berhasil diperbarui');
         return redirect()->to('/seleksi-berkas');
+    }
+
+    public function whatsapp($nomor, $pesan)
+    {
+        $curl = curl_init();
+
+        curl_setopt_array($curl, array(
+        CURLOPT_URL => 'https://api.fonnte.com/send',
+        CURLOPT_RETURNTRANSFER => true,
+        CURLOPT_ENCODING => '',
+        CURLOPT_MAXREDIRS => 10,
+        CURLOPT_TIMEOUT => 0,
+        CURLOPT_FOLLOWLOCATION => true,
+        CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+        CURLOPT_CUSTOMREQUEST => 'POST',
+        CURLOPT_POSTFIELDS => array(
+        'target' => $nomor,
+        'message' => $pesan, 
+        'countryCode' => '62', //optional
+        ),
+        CURLOPT_HTTPHEADER => array(
+            'Authorization: +gCiqiemdr4igURy#qzL' //change TOKEN to your actual token
+        ),
+        ));
+
+        $response = curl_exec($curl);
+
+        curl_close($curl);
+        echo $response;
     }
 }

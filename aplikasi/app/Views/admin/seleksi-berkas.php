@@ -245,6 +245,8 @@
                             </div>
                             <form action="<?= base_url() ?>/admin/peserta/terima/<?= $p['id_peserta']; ?>" method="post">
                             <input type="hidden" name="status" value="3">    
+                            <input type="hidden" name="no_hp" value="<?= $p['no_hp'] ?>">    
+                            <input type="hidden" name="nama_lengkap" value="<?= $p['nama_lengkap'] ?>">    
                             <div class="modal-body">
                                 <table class="table table-striped bordered bg-white">
                                 <tr>

@@ -214,6 +214,16 @@
                             </svg>
                             </button>
                         </form>
+                        <a href="https://wa.me/<?= $p['no_hp'] ?>" class="btn btn-success" target="_blank">
+                        <svg class="icon">
+                            <use xlink:href="<?= base_url() ?>/vendors/@coreui/icons/svg/free.svg#cil-phone"></use>
+                        </svg>
+                        </a>
+						<a href="<?= base_url() ?>/kartu-pendaftaran/<?= $p['id_peserta'] ?>" class="btn btn-success" target="_blank">
+                        <svg class="icon">
+                            <use xlink:href="<?= base_url() ?>/vendors/@coreui/icons/svg/free.svg#cil-print"></use>
+                        </svg>
+                        </a>
                     </td>
                 </tr>
                 <?php endforeach; ?>

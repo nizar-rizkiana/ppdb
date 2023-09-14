@@ -327,6 +327,11 @@
                             </svg>
                             </button>
                         </form>
+                        <a href="https://wa.me/<?= $p['no_hp'] ?>" class="btn btn-success" target="_blank">
+                        <svg class="icon">
+                            <use xlink:href="<?= base_url() ?>/vendors/@coreui/icons/svg/free.svg#cil-phone"></use>
+                        </svg>
+                        </a>
                     </td>
                 </tr>
                 <?php endforeach; ?>

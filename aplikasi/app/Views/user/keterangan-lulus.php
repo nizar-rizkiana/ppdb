@@ -87,9 +87,16 @@
     <br>
     <span>Berdasarkan Hasil Rapat Dinas Pendidikan dan Tenaga Kependidikan Penentuan Kelulusan Tanggal 25 Juli 2023, dengan ini calon Peserta Didik Baru tersebut di atas dinyatakan :</span>
     <br>
+    <?php if($peserta['status'] == 3) : ?>
     <div class="lulus">
         <span>DITERIMA</span>
     </div>
+    <?php endif; ?>
+    <?php if($peserta['status'] == 4) : ?>
+    <div class="lulus">
+        <span>DITOLAK</span>
+    </div>
+    <?php endif; ?>
     <br>
     <span>Menjadi Siswa SMKN 4 Pandeglang Provinsi Banten Program Keahlian &nbsp;<b><?= $peserta['diterima'] ?></b>&nbsp; Tahun Ajaran 2023/2024</span>
     <br>

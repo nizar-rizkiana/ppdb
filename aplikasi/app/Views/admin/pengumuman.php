@@ -15,7 +15,7 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="row">
-                <form action="<?= base_url() ?>/kirim-pengumuman" method="post">
+              <?= form_open('/kirim-pengumuman', ['enctype' => 'multipart/form-data']) ?>
                     <?php csrf_token(); ?>
                       <label class="col-sm-4 col-form-label" for="Pesan">Pesan</label>
                       <div class="col-sm-8">
@@ -34,7 +34,7 @@
                       <br>
                       <br>
                     <button type="submit" class="btn btn-primary w-100">Kirim</button>
-                </form>
+                  <?= form_close(); ?>
             </div>
             <!-- /.row-->
           </div>

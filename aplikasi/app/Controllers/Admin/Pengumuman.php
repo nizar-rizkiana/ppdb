@@ -68,9 +68,10 @@ class Pengumuman extends BaseController
         $pesan = $this->request->getVar('pesan');
         // menyimpan file ijazah
         $file = $this->request->getFile('file');
-        // $namaFile = $file->getRandomName();
-        // $file->move('pengumuman', $namaFile);
-        $this->whatsapp($pesan);
+        dd($file);
+        $namaFile = $file->getRandomName();
+        $file->move('file-pengumuman', $namaFile);
+        $this->whatsapp($pesan, $namaFile);
         session()->setFlashdata('berhasil', 'Pengumuman berhasil di kirim');
         return redirect()->to('/pengumuman');
     } 

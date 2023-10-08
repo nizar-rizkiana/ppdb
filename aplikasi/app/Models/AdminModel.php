@@ -9,7 +9,7 @@ class AdminModel extends Model
     protected $table = 'tb_admin';
 	protected $primaryKey = 'id_admin';
 	protected $useTimestamps = true;
-	protected $allowedFields = ['nama_admin', 'email', 'password'];
+	protected $allowedFields = ['nama_admin', 'email', 'password', 'level'];
 
     public function getAdmin()
     {

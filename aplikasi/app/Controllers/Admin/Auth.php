@@ -98,6 +98,7 @@ class Auth extends BaseController
         $this->adminModel->save([
             'nama_admin' => $this->request->getVar('nama_admin'),
             'email' => $this->request->getVar('email'),
+            'level' => $this->request->getVar('level'),
             'password' => password_hash($this->request->getVar('password'), PASSWORD_BCRYPT)
         ]);
 
@@ -158,6 +159,7 @@ class Auth extends BaseController
         $this->adminModel->update($id, [
             'nama_admin' => $this->request->getVar('nama_admin'),
             'email' => $this->request->getVar('email'),
+            'level' => $this->request->getVar('level'),
             'password' => $password
         ]);
 

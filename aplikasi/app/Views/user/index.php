@@ -93,7 +93,7 @@
           <a class="nav-link active" aria-current="page" href="#">Home</a>
           <!-- <a class="nav-link" href="#">Tentang</a> -->
           <a class="nav-link active" href="<?= base_url() ?>/auth">Login</a>
-          <a class="nav-link active" href="https://wa.me/6288223903009?text=*SMKN4#">Kontak</a>
+          <a class="nav-link active" href="https://wa.me/62881025686546?text=*SMKN4#">Kontak</a>
         <!-- </div> -->
       </div>
     </div>
@@ -117,7 +117,7 @@
           <a class="nav-link text-white" href="<?= base_url() ?>/auth">Login</a>
           </li>
           <li class="nav-item">
-          <a class="nav-link text-white" href="https://wa.me/6283834914189?text=*SMKN4#">Kontak</a>
+          <a class="nav-link text-white" href="https://wa.me/62881025686546?text=*SMKN4#">Kontak</a>
           </li>
         </ul>
       </div>

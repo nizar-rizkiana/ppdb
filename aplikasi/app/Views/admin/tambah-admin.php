@@ -22,7 +22,14 @@
                         </div>
                     </div>
                     <div class="mb-3 row">
-                        <label class="col-sm-4 col-form-label" for="email">username</label>
+                        <label class="col-sm-4 col-form-label" for="level">Status</label>
+                        <select name="level" id="level" class="form-select" required>
+                            <option value="1">Admin</option>
+                            <option value="2">Kepala Sekolah</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 row">
+                        <label class="col-sm-4 col-form-label" for="email">Email</label>
                         <div class="col-sm-8">
                             <input class="form-control <?= ($validation->hasError('email')) ? 'is-invalid' : '' ?>" id="email" type="email" placeholder="email.." name="email" required value="<?= old('email') ?>">
                             <div class="invalid-feedback">
@@ -74,7 +81,7 @@
                     <th scope="col">No</th>
                     <th scope="col">Nama Lengkap</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Dibuat pada</th>
+                    <th scope="col">Status</th>
                     <th scope="col">Aksi</th>
                 </tr>
                 </thead>
@@ -85,7 +92,7 @@
                     <th scope="row"><?= $no++ ?></th>
                     <td><?= $a['nama_admin']; ?></td>
                     <td><?= $a['email']; ?></td>
-                    <td><?=  date('d-m-Y', strtotime($a['created_at'])); ?></td>
+                    <td><?=  ($a['level'] == 1) ? 'Admin' : 'Kepala Sekolah' ?></td>
                     <td>
                     <div class="modal fade" id="modalEdit<?= $a['id_admin'] ?>" tabindex="-1" aria-labelledby="modalEditLabel<?= $a['id_admin'] ?>" aria-hidden="true">
                         <div class="modal-dialog">
@@ -105,6 +112,13 @@
                                                 <?= $validation->getError('nama_admin') ?>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="mb-3 row">
+                                        <label class="col-sm-4 col-form-label" for="level">Status</label>
+                                        <select name="level" id="level" class="form-select" required>
+                                            <option value="1" <?= ($a['level'] == 1) ? 'required' : '' ?>>Admin</option>
+                                            <option value="2" <?= ($a['level'] == 2) ? 'required' : '' ?>>Kepala Sekolah</option>
+                                        </select>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-4 col-form-label" for="email">Email</label>

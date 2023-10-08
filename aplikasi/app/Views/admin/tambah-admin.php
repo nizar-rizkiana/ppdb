@@ -23,10 +23,12 @@
                     </div>
                     <div class="mb-3 row">
                         <label class="col-sm-4 col-form-label" for="level">Status</label>
-                        <select name="level" id="level" class="form-select" required>
-                            <option value="1">Admin</option>
-                            <option value="2">Kepala Sekolah</option>
-                        </select>
+                        <div class="col-sm-8">
+                            <select name="level" id="level" class="form-select" required>
+                                <option value="1">Admin</option>
+                                <option value="2">Kepala Sekolah</option>
+                            </select>
+                        </div>
                     </div>
                     <div class="mb-3 row">
                         <label class="col-sm-4 col-form-label" for="email">Email</label>
@@ -115,10 +117,12 @@
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-4 col-form-label" for="level">Status</label>
-                                        <select name="level" id="level" class="form-select" required>
-                                            <option value="1" <?= ($a['level'] == 1) ? 'required' : '' ?>>Admin</option>
-                                            <option value="2" <?= ($a['level'] == 2) ? 'required' : '' ?>>Kepala Sekolah</option>
-                                        </select>
+                                        <div class="col-sm-8">
+                                            <select name="level" id="level" class="form-select" required>
+                                                <option value="1" <?= ($a['level'] == 1) ? 'required' : '' ?>>Admin</option>
+                                                <option value="2" <?= ($a['level'] == 2) ? 'required' : '' ?>>Kepala Sekolah</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="mb-3 row">
                                         <label class="col-sm-4 col-form-label" for="email">Email</label>

@@ -30,6 +30,7 @@ class Dashboard extends BaseController
             'diterima' => $diterima,
             'ditolak' => $ditolak,
             'admin' => $admin,
+            'jurusan' => $this->pesertaModel->getByjurusan()
         ];
         return view('admin/index', $data);
     }

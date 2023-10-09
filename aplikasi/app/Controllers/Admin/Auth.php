@@ -31,6 +31,7 @@ class Auth extends BaseController
                     'id_admin' => $dataadmin['id_admin'],
                     'nama_admin' => $dataadmin['nama_admin'],
                     'email_admin' => $dataadmin['email'],
+                    'level' => $dataadmin['level'],
                     'logged_in_admin' => true
                 ]);
                 return redirect()->to('/dashboard');

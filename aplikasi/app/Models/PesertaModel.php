@@ -15,4 +15,10 @@ class PesertaModel extends Model
     {
         
     }
+
+    public function getByjurusan()
+    {
+        return $this->selectCount('nisn')->select('pilihan_pertama')
+        ->groupBy('pilihan_pertama')->findAll();
+    }
 }

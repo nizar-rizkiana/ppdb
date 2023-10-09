@@ -28,6 +28,10 @@ class Admin extends Migration
                 'type'              => 'VARCHAR',
                 'constraint'        => 200,
             ],
+            'level' => [
+                'type'              => 'int',
+                'constraint'        => 2,
+            ],
             'created_at' => [
 				'type'				=> 'DATETIME',
 				'null'				=> true,

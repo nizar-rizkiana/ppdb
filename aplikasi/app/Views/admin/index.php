@@ -69,8 +69,6 @@
       <div class="card-header">Dashboard</div>
       <div class="card-body">
         <div class="row">
-          <div class="col-sm-6">
-            <div class="row">
               <!-- hanya tampil jika kepala sekolah yang login -->
               <!-- /.col-->
               <?php if(session()->get('level') == 2) : ?>
@@ -91,9 +89,7 @@
                 <?php endforeach; ?>
               <?php endif; ?>
               <!-- /.col-->
-            </div>
-            <!-- /.row-->
-          </div>
+          
         </div>
       </div>
     </div>

@@ -191,37 +191,44 @@
                                         <div class="mb-3">
                                             <label for="foto" class="form-label">Pas Photo</label>
                                             <br><a href="<?= base_url(); ?>/foto/<?= $p['foto'] ?>" target="_blank" class="btn btn-primary">Lihat Berkas</a>
-                                            <input type="file" name="foto" id="foto" class="form-control" required value="<?= $p['foto'] ?>">
+                                            <input type="file" name="foto" id="foto" class="form-control">
+                                            <input type="hidden" name="foto_lama" value="<?= $p['foto'] ?>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="ktp_ibu" class="form-label">KTP Ibu</label>
                                             <br><a href="<?= base_url(); ?>/ktp_ibu/<?= $p['ktp_ibu'] ?>" target="_blank" class="btn btn-primary">Lihat Berkas</a>
-                                            <!-- <input type="file" name="ktp_ibu" id="ktp_ibu" class="form-control" required> -->
+                                            <input type="file" name="ktp_ibu" id="ktp_ibu" class="form-control">
+                                            <input type="hidden" name="ktp_ibu_lama" value="<?= $p['ktp_ibu'] ?>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="ktp_bpk" class="form-label">KTP Bapak</label>
                                             <br><a href="<?= base_url(); ?>/ktp_bpk/<?= $p['ktp_bpk'] ?>" target="_blank" class="btn btn-primary">Lihat Berkas</a>
-                                            <!-- <input type="file" name="ktp_bpk" id="ktp_bpk" class="form-control" required> -->
+                                            <input type="file" name="ktp_bpk" id="ktp_bpk" class="form-control">
+                                            <input type="hidden" name="ktp_bpk_lama" value="<?= $p['ktp_bpk'] ?>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="kk" class="form-label">Kartu Keluarga</label>
                                             <br><a href="<?= base_url(); ?>/kk/<?= $p['kk'] ?>" target="_blank" class="btn btn-primary">Lihat Berkas</a>
-                                            <!-- <input type="file" name="kk" id="kk" class="form-control" required> -->
+                                            <input type="file" name="kk" id="kk" class="form-control">
+                                            <input type="hidden" name="kk_lama" value="<?= $p['kk'] ?>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="akta_kelahiran" class="form-label">Akta Kelahiran</label>
                                             <br><a href="<?= base_url(); ?>/akta_kelahiran/<?= $p['akta_kelahiran'] ?>" target="_blank" class="btn btn-primary">Lihat Berkas</a>
-                                            <!-- <input type="file" name="akta_kelahiran" id="akta_kelahiran" class="form-control" required> -->
+                                            <input type="file" name="akta_kelahiran" id="akta_kelahiran" class="form-control">
+                                            <input type="hidden" name="akta_kelahiran_lama" value="<?= $p['akta_kelahiran'] ?>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="ijazah" class="form-label">Ijazah</label>
                                             <br><a href="<?= base_url(); ?>/ijazah/<?= $p['ijazah'] ?>" target="_blank" class="btn btn-primary">Lihat Berkas</a>
-                                            <!-- <input type="file" name="ijazah" id="ijazah" class="form-control" required> -->
+                                            <input type="file" name="ijazah" id="ijazah" class="form-control">
+                                            <input type="hidden" name="ijazah_lama" value="<?= $p['ijazah'] ?>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="raport" class="form-label">Raport</label>
                                             <br><a href="<?= base_url(); ?>/raport/<?= $p['raport'] ?>" target="_blank" class="btn btn-primary">Lihat Berkas</a>
-                                            <!-- <input type="file" name="raport" id="raport" class="form-control" required> -->
+                                            <input type="file" name="raport" id="raport" class="form-control">
+                                            <input type="hidden" name="raport_lama" value="<?= $p['raport'] ?>">
                                         </div>
                                     </div>
                                 </div>

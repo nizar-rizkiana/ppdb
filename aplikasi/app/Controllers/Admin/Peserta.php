@@ -115,7 +115,7 @@ class Peserta extends BaseController
             $namaFoto = $fileFoto->getRandomName();
             // pindahkan lokasi foto
             $fileFoto->move('foto', $namaFoto);
-            unlink('foto'.$this->request->getVar('foto_lama'));
+            unlink('foto/'.$this->request->getVar('foto_lama'));
         }
         
         //ambil gambar
@@ -128,7 +128,7 @@ class Peserta extends BaseController
             $namaKtpibu = $fileKtpibu->getRandomName();
             // pindahkan lokasi foto
             $fileKtpibu->move('ktp_ibu', $namaKtpibu);
-            unlink('ktp_ibu'.$this->request->getVar('ktp_ibu_lama'));
+            unlink('ktp_ibu/'.$this->request->getVar('ktp_ibu_lama'));
         }
         
         //ambil gambar
@@ -141,7 +141,7 @@ class Peserta extends BaseController
             $namaKtpbpk = $fileKtpbpk->getRandomName();
             // pindahkan lokasi foto
             $fileKtpbpk->move('ktp_bpk', $namaKtpbpk);
-            unlink('ktp_bpk'.$this->request->getVar('ktp_bpk_lama'));
+            unlink('ktp_bpk/'.$this->request->getVar('ktp_bpk_lama'));
         }
         
         //ambil gambar
@@ -154,7 +154,7 @@ class Peserta extends BaseController
             $namaKK = $fileKK->getRandomName();
             // pindahkan lokasi foto
             $fileKK->move('kk', $namaKK);
-            unlink('kk'.$this->request->getVar('kk_lama'));
+            unlink('kk/'.$this->request->getVar('kk_lama'));
         }
         
         //ambil gambar
@@ -167,7 +167,7 @@ class Peserta extends BaseController
             $namaAkta = $filaAkta->getRandomName();
             // pindahkan lokasi foto
             $filaAkta->move('akta_kelahiran', $namaAkta);
-            unlink('akta_kelahiran'.$this->request->getVar('akta_kelahiran_lama'));
+            unlink('akta_kelahiran/'.$this->request->getVar('akta_kelahiran_lama'));
         }
         
         //ambil gambar
@@ -180,7 +180,7 @@ class Peserta extends BaseController
             $namaIjazah = $filaIjazah->getRandomName();
             // pindahkan lokasi foto
             $filaIjazah->move('ijazah', $namaIjazah);
-            unlink('ijazah'.$this->request->getVar('ijazah_lama'));
+            unlink('ijazah/'.$this->request->getVar('ijazah_lama'));
         }
         
         //ambil gambar
@@ -193,7 +193,7 @@ class Peserta extends BaseController
             $namaRaport = $filRaporth->getRandomName();
             // pindahkan lokasi foto
             $filaRaport->move('raport', $namaRaport);
-            unlink('raport'.$this->request->getVar('raport_lama'));
+            unlink('raport/'.$this->request->getVar('raport_lama'));
         }
         $this->pesertaModel->update($id, [
             'nisn' => $this->request->getVar('nisn'),

@@ -191,7 +191,7 @@
                                         <div class="mb-3">
                                             <label for="foto" class="form-label">Pas Photo</label>
                                             <br><a href="<?= base_url(); ?>/foto/<?= $p['foto'] ?>" target="_blank" class="btn btn-primary">Lihat Berkas</a>
-                                            <!-- <input type="file" name="foto" id="foto" class="form-control" required> -->
+                                            <input type="file" name="foto" id="foto" class="form-control" required value="<?= $p['foto'] ?>">
                                         </div>
                                         <div class="mb-3">
                                             <label for="ktp_ibu" class="form-label">KTP Ibu</label>

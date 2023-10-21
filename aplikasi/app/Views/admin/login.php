@@ -47,6 +47,7 @@
                     <div class="card-group d-block d-md-flex row">
                         <div class="card col-md-5 p-4 mb-0">
                             <div class="card-body">
+                            <img src="<?= base_url() ?>/assets/img/WEBSITE/LOGO PPDB.png" alt="" style="max-width: 100%">
                                 <h1>Login</h1>
                                 <p class="text-medium-emphasis">Masuk ke akun anda</p>
                                 <form action="<?= base_url() ?>/admin/auth/login" method="post">
